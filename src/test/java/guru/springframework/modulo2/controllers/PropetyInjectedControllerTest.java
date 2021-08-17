@@ -1,10 +1,8 @@
 package guru.springframework.modulo2.controllers;
 
-import guru.springframework.modulo2.services.GreetingServiceImpl;
+import guru.springframework.modulo2.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropetyInjectedControllerTest {
 
@@ -14,7 +12,7 @@ class PropetyInjectedControllerTest {
     void setUp() {
         controller = new PropetyInjectedController();
 
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingServiceImpl();
     }
 
     @Test
